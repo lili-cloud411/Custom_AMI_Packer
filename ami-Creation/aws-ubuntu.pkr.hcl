@@ -26,4 +26,14 @@ build {
   sources = [
     "source.amazon-ebs.ubuntu"
   ]
+
+  provisioner "shell" {
+    inline = [
+      "echo Installing updates",
+      "sudo apt-get update",
+      "sudo apt-get install -y nginx"
+    ]
+  }
 }
+
+# packer build -var-file=variables.pkrvars.hcl . 
