@@ -36,4 +36,4 @@ jobs:
         run: |
           packer init aws-ubuntu.pkr.hcl
           packer validate aws-ubuntu.pkr.hcl
-          packer build aws-ubuntu.pkr.hcl
+          packer build aws-ubuntu.pkr.hcl   #buiding the iam image
