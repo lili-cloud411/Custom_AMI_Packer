@@ -36,4 +36,4 @@ build {
   }
 }
 
-# packer build -var-file=variables.pkrvars.hcl . 
+# packer build -var-file=variables.pkrvars.hcl . # to build the ami 
