@@ -1,9 +1,10 @@
 name: Packer Build
 
 on:
-  push:
-    branches:
-      - master
+  workflow_dispatch:
+  #push:
+   # branches:
+    #  - master
   #pull_request:
    # branches:
     #  - master
